@@ -50,10 +50,10 @@ var affiche = function(m) {
 // calcul le nombre de cellules vivantes autour de la cellule de coordonnées (lig, col)
 var voisins = function(lig, col) {
   var ans=0;
-  for(var i=-1;i<=1;i++){
-    for(var j=-1;j<=1;j++){
-      if(i != 0 ||  j != 0){
-        ans+=monde[lig+i][col+j];
+  for(var i=-1;i<1;i++){
+    for(var j=-1;j<1;j++){
+      if(i != 0 || j != 0){
+        ans+=mondeTMP[lig+i][col+j];
       }
     }
   }
