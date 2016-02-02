@@ -1,0 +1,42 @@
+<html>
+  <body>
+     <div id="output"></div>
+         <script type='text/javascript'>
+var monde = [
+  [0,0,0,0,0,0,0,0],
+  [0,1,1,0,0,0,0,0],
+  [0,1,1,0,0,0,0,0],
+  [0,0,0,0,0,0,0,0],
+  [0,0,0,0,1,0,0,0],
+  [0,0,0,0,1,0,0,0],
+  [0,0,0,0,1,0,0,0],
+  [0,0,0,0,0,0,0,0]
+];
+
+// fonction créeant un tableau à deux dimensions de nbLig lignes et nbCol colonnes, i$
+// il est conseillé de commencer avec un tableau à une dimension dans lequel on ajout$
+var mondeVide = function(nbLig, nbCol, value){
+  var t=[[]];
+  for(i = 0;i<nbLig;i++){
+    t.push([]);
+    for(j=0;j<nbCol;j++){
+      t[i].push(value);
+    }
+  }
+  return t;
+};
+
+// il vaut mieux avoir un tableau temporaire lors du calcul de la génération suivante$
+var mondeTMP = mondeVide(8,8,0);
+
+// fonction prenant en paramètre un tableau à deux dimensions contenant des 0 et 1 qu$
+var affiche = function(m) {
+  var screen = document.getElementById("output");
+  screen.style['font-family'] = 'monospace';
+  screen.innerHTML = '';
+  for (var idxL=0; idxL<m.length; idxL++) {
+    var ligne = "
+  </script>
+ </body>
+</html>
+        

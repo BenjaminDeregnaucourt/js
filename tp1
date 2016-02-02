@@ -1,0 +1,22 @@
+
+if (typeof a === "boolean"){
+   console.log(a + "est un booléen");
+} 
+
+// si a est un booléen affiche "<valeur de a> est un booléen
+if (typeof a === "string"){
+   console.log(a + "est une chaine);
+}
+if(typeof a === "undefined"){
+   console.log(a +"n'est pas définie");
+}
+if (typeof a === "null"){
+   console.log(a+"est null");
+}
+// et ainsi de suite pour les différents types présentés ci-dessus
+
+undefined;
+
+
+
+
